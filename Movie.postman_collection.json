@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "ff01e5ad-fe0f-4c18-be64-087676f7ed57",
+		"name": "Movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49192250",
+		"_collection_link": "https://michelleptrciaa-1335365.postman.co/workspace/misel's-Workspace~afcf74e5-bca6-4289-8458-681f05ca3adb/collection/49192250-ff01e5ad-fe0f-4c18-be64-087676f7ed57?action=share&source=collection_link&creator=49192250"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"misel\",\r\n    \"email\" : \"misel@gmail.com\",\r\n    \"password\" : \"123455556\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIgnIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"misel@gmail.com\",\r\n    \"password\" : \"123455556\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyNzJkNWFjMjA5MTdhYWZmYjA1YTAxIiwidXNlcm5hbWUiOiJtaXNlbCIsImlhdCI6MTc2NDE3NTM5OCwiZXhwIjoxNzY0MTc2Mjk4fQ.FQUrC1m98IqFFeHiySDQyMkIwnxEnUuIsZdqt_Do8S8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"cinderella\",\r\n    \"sutradara\" : \"misel\",\r\n    \"tahunRilis\" : \"2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyNzJkNWFjMjA5MTdhYWZmYjA1YTAxIiwidXNlcm5hbWUiOiJtaXNlbCIsImlhdCI6MTc2NDE3NTM5OCwiZXhwIjoxNzY0MTc2Mjk4fQ.FQUrC1m98IqFFeHiySDQyMkIwnxEnUuIsZdqt_Do8S8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"cinderella\",\r\n    \"sutradara\" : \"misel\",\r\n    \"tahunRilis\" : \"2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/69272f35c20917aaffb05a05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"69272f35c20917aaffb05a05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyNzJkNWFjMjA5MTdhYWZmYjA1YTAxIiwidXNlcm5hbWUiOiJtaXNlbCIsImlhdCI6MTc2NDE3NTM5OCwiZXhwIjoxNzY0MTc2Mjk4fQ.FQUrC1m98IqFFeHiySDQyMkIwnxEnUuIsZdqt_Do8S8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"cinderella\",\r\n    \"sutradara\" : \"misel\",\r\n    \"tahunRilis\" : \"2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/69272f35c20917aaffb05a05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"69272f35c20917aaffb05a05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyNzJkNWFjMjA5MTdhYWZmYjA1YTAxIiwidXNlcm5hbWUiOiJtaXNlbCIsImlhdCI6MTc2NDE3NTM5OCwiZXhwIjoxNzY0MTc2Mjk4fQ.FQUrC1m98IqFFeHiySDQyMkIwnxEnUuIsZdqt_Do8S8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"cinderella\",\r\n    \"sutradara\" : \"misel\",\r\n    \"tahunRilis\" : \"2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/69272f35c20917aaffb05a05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"69272f35c20917aaffb05a05"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,6 +1,29 @@
 {
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "jsonwebtoken": "^9.0.2"
-  }
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "nodemon": "^3.1.11"
+  },
+  "name": "movieexpress",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichellePtrciaa/MovieExpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichellePtrciaa/MovieExpress/issues"
+  },
+  "homepage": "https://github.com/MichellePtrciaa/MovieExpress#readme",
+  "description": ""
 }
