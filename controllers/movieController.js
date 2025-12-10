@@ -1,8 +1,9 @@
-import movieModel from "../models/movieModel.js";
+import MovieModel from "../models/movieModel.js";
+
 
 export const listMovie = async (req, res) => {
     try {
-        const movies = await movieModel
+        const movies = await MovieModel
             .find({ createdBy: req.user?.user_id })
             .sort({ createdAt: -1 });
 
